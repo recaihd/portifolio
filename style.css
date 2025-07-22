@@ -1,0 +1,278 @@
+    * { 
+    cursor: url('https://recaihd.github.io/Cursores-Personalizados/staff_cursor_32x32.png'), auto;
+}
+    
+    body {
+      background: black;
+      color: white;
+      font-family: Arial, Helvetica, sans-serif;
+      text-align: center;
+    }
+
+    #typewriter {
+      display: inline-block;
+      border-right: 2px solid white;
+      white-space: nowrap;
+      overflow: hidden;
+      animation: blinkCursor 0.8s infinite;
+    }
+
+    @keyframes blinkCursor {
+      0% { border-color: white; }
+      50% { border-color: transparent; }
+      100% { border-color: white; }
+    }
+
+    .social-icons a {
+      text-decoration: none;
+    }
+
+    .social-icons img {
+      width: 40px;
+      margin: 0 10px;
+      transition: transform 0.3s ease;
+    }
+
+    .social-icons img:hover {
+      transform: scale(1.2);
+    }
+
+    .box {
+      width: 300px;
+      height: 300px;
+      background-color: #000;
+      border-radius: 20px;
+      box-shadow: 0 0 20px white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 40px auto 0 auto;
+    }
+
+    .imagem-box {
+      width: 90%;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    .discord-button {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #5865F2;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-family: Arial, sans-serif;
+      font-weight: bold;
+      box-shadow: 0 0 10px #5865F2;
+      transition: all 0.3s ease;
+      transform: scale(1);
+    }
+
+    .discord-button:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 20px #5865F2;
+    }
+
+    #membros-box {
+      color: #ccc;
+      font-size: 16px;
+      margin-top: 3px;
+      margin-bottom: 10px;
+    }
+
+    
+    .goularte-card {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.goularte-bg {
+  position: relative;
+  width: 300px;
+  height: 170px;
+  background-color: #111;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+  text-align: left;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+.goularte-fundo {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center; /* CENTRALIZA a imagem no bloco */
+  opacity: 0.3;
+}
+
+
+.goularte-icon {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 2px solid white;
+  z-index: 1;
+}
+
+.goularte-info {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  z-index: 1;
+}
+
+.goularte-info h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.goularte-info .dev {
+  margin: 2px 0;
+  color: #f7f7f7;
+  font-size: 14px;
+}
+
+.goularte-info .membros {
+  color: #ccc;
+  font-size: 13px;
+}
+
+
+.botao-central {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.add-discord {
+  background-color: #5865F2;
+  color: white;
+  padding: 10px 18px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 15px;
+  box-shadow: 0 0 15px #5865F2;
+  transition: 0.3s ease;
+}
+
+.add-discord:hover {
+  background-color: #4752c4;
+  transform: scale(1.05);
+}
+
+/* 
+    body {
+      background: black;
+      color: white;
+      font-family: Arial, Helvetica, sans-serif;
+      text-align: center;
+    }
+
+    #typewriter {
+      display: inline-block;
+      border-right: 2px solid white;
+      white-space: nowrap;
+      overflow: hidden;
+      animation: blinkCursor 0.8s infinite;
+    }
+
+    @keyframes blinkCursor {
+      0% { border-color: white; }
+      50% { border-color: transparent; }
+      100% { border-color: white; }
+    }
+
+    .social-icons a {
+      text-decoration: none;
+    }
+
+    .social-icons img {
+      width: 40px;
+      margin: 0 10px;
+      transition: transform 0.3s ease;
+    }
+
+    .social-icons img:hover {
+      transform: scale(1.2);
+    }
+
+    .box {
+      width: 300px;
+      height: 300px;
+      background-color: #000;
+      border-radius: 20px;
+      box-shadow: 0 0 20px white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 40px auto 0 auto;
+    }
+
+    .imagem-box {
+      width: 90%;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    .discord-button {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #5865F2;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-family: Arial, sans-serif;
+      font-weight: bold;
+      box-shadow: 0 0 10px #5865F2;
+      transition: all 0.3s ease;
+      transform: scale(1);
+    }
+
+    .discord-button:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 20px #5865F2;
+    }
+
+    #membros-box {
+      color: #ccc;
+      font-size: 16px;
+      margin-top: 3px;
+      margin-bottom: 10px;
+    }
+
+    
+    .goularte-card {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.goularte-bg {
+  position: relative;
+  width: 300px;
+  height: 170px;
+  background-color: #111;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+  text-align: left;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+.goularte-fundo {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center; /* CENTRALIZA a imagem no bloco */
+  /*
