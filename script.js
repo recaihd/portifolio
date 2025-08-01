@@ -31,7 +31,7 @@ const dadosBox = [
     link: "https://discord.gg/fnyZ3Rwf6v"
   },
   {
-    imagem: "img/recai-server.gif",
+    imagem: "img/Aura-server-Recaihd.png",
     titulo: "RecaiHD",
     membros: "+200 membros",
     subtitulo: "Dono",
@@ -45,14 +45,6 @@ const dadosBox = [
     subtitulo: "Moderador",
     corSubtitulo: "#68d14f",
     link: "https://discord.gg/RMK4dnm7Cg"
-  },
-  {
-    imagem: "img/temple-icon.gif",
-    titulo: "Temple of History",
-    membros: "+80 membros",
-    subtitulo: "Admin e Parceiro",
-    corSubtitulo: "#00ffee",
-    link: "https://discord.gg/mZf64r6uU7"
   }
 ];
 
