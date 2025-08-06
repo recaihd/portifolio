@@ -17,7 +17,7 @@ const dadosBox = [
   {
     imagem: "img/gato-potkinbt.png",
     titulo: "Lives Porkinbr",
-    membros: "+20.000 membros",
+    membros: "+30.000 membros",
     subtitulo: "Ex-ajudante",
     corSubtitulo: "#ff0000",
     link: "https://discord.gg/QJVBftSRmV"
