@@ -37,14 +37,6 @@ const dadosBox = [
     subtitulo: "Dono",
     corSubtitulo: "#00ffee",
     link: "https://discord.gg/UNuYBvZREC"
-  },
-  {
-    imagem: "img/redefenix-icon.png",
-    titulo: "Redefênix",
-    membros: "+250 membros",
-    subtitulo: "Moderador",
-    corSubtitulo: "#68d14f",
-    link: "https://discord.gg/RMK4dnm7Cg"
   }
 ];
 
