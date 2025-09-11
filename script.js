@@ -1,4 +1,4 @@
-const texto = "RecaiHD";
+const texto = "recai";
 const velocidade = 300;
 const destino = document.getElementById("typewriter");
 
