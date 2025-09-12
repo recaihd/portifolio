@@ -8,5 +8,3 @@ Thumbs.db
 # Ignorar arquivos de log, se algum for criado
 *.log
 
-# ignorar drive
-.tpm.drivedownload/
