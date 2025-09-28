@@ -1,5 +1,5 @@
 <p align="center">
-<img src="https://i.postimg.cc/V62ZgLv7/frierencomida.jpg">
+<img src="https://i.postimg.cc/V62ZgLv7/frierencomida.jpg" width="300px">
 </p>
 
 <h1 align="center">
