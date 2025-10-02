@@ -31,7 +31,7 @@ const dadosBox = [
     link: "https://discord.gg/fnyZ3Rwf6v"
   },
   {
-    imagem: "img/linie.gif",
+    imagem: "img/recai-server.gif",
     titulo: "RecaiHD",
     membros: "+200 membros",
     subtitulo: "Dono",
