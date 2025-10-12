@@ -2,6 +2,13 @@ const texto = "RecaiHD";
 const velocidade = 300;
 const destino = document.getElementById("typewriter");
 
+let msg = "  RecaiHD  -  Developer,  Gamer,  Student,  Editor,  Yotuber - ";
+let ii = 0;
+setInterval(()=>{
+  document.title = msg.slice(ii) + msg.slice(0,ii);
+  ii = (ii+1) % msg.length;
+}, 200);
+
 let i = 0;
 function digitar() {
   if (i < texto.length) {
