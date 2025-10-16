@@ -31,7 +31,7 @@ const dadosBox = [
   },
   {
     imagem: "img/ferrouk.gif",
-    titulo: "Clã dos Ferreiros",
+    titulo: "SKYRIM BRASIL",
     membros: "+500 membros",
     subtitulo: "Administrador",
     corSubtitulo: "#00ffee",
