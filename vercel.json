@@ -9,6 +9,7 @@
   ],
   "routes": [
     { "src": "/teste", "dest": "/teste.html" },
+    { "src": "/projetos", "dest": "/projetos.html"},
     { "src": "/(.*)", "dest": "/$1" }
   ]
 }
