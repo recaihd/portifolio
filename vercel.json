@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/teste",
+      "destination": "https://recai-backend.vercel.app/teste"
+    }
+  ]
+}
