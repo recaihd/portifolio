@@ -5,6 +5,18 @@
       text-align: center;
     }
 
+    .canto-esquerdo {
+  position: absolute;
+  top: 20px;      /* distância do topo */
+  left: 20px;     /* distância da esquerda */
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  text-shadow: 2px 2px 4px black; /* dá um leve destaque */
+  margin: 0;
+}
+
+
     .nome-container {
   display: inline-flex;
   align-items: center;
