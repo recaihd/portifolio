@@ -1,8 +1,14 @@
 {
-  "rewrites": [
-    {
-      "source": "/teste",
-      "destination": "https://recai-backend.vercel.app/teste"
-    }
+  "version": 2,
+  "builds": [
+    { "src": "api/index.js", "use": "@vercel/node" },
+    { "src": "*.html", "use": "@vercel/static" },
+    { "src": "img/**", "use": "@vercel/static" },
+    { "src": "style.css", "use": "@vercel/static" },
+    { "src": "script.js", "use": "@vercel/static" }
+  ],
+  "routes": [
+    { "src": "/teste", "dest": "/teste.html" },
+    { "src": "/(.*)", "dest": "/$1" }
   ]
 }
