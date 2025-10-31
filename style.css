@@ -5,16 +5,51 @@
       text-align: center;
     }
 
-    .canto-esquerdo {
-  position: absolute;
-  top: 20px;      /* distância do topo */
-  left: 20px;     /* distância da esquerda */
+    /* Header fixo no topo */
+.topbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #000;
   color: white;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 20px;
-  text-shadow: 2px 2px 4px black; /* dá um leve destaque */
-  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 30px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+  z-index: 999;
 }
+
+/* Estilo dos links do header */
+.topbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+
+.topbar-left {
+  margin-left: 10px;
+}
+
+.topbar-right {
+  margin-right: 1445px;
+}
+
+.topbar a:hover {
+  color: #ffffff; /* azul igual ao do seu tema */
+}
+
+/* Corrige o deslocamento do conteúdo por causa do header fixo */
+body {
+  margin-top: 70px; /* evita que o header sobreponha o conteúdo */
+}
+
+
+
 
 
     .nome-container {
