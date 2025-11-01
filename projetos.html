@@ -1,74 +1,121 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="./img/1754437014761.png" type="image/png">
-    <style>
-        * {
-            text-align: center;
-        }
-        h1 {
-            color: white;
-            font-family: Arial, Helvetica, sans-serif;
-            text-shadow: black 2px 2px 2px;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./img/1754437014761.png" type="image/png">
+  <title>Projetos</title>
 
-                h2 {
-            color: white;
-            font-family: Arial, Helvetica, sans-serif;
-            text-shadow: black 2px 2px 2px;
-        }
+  <style>
+    * {
+      text-align: center;
+      box-sizing: border-box;
+    }
 
-                        h4 {
-            color: white;
-            font-family: Arial, Helvetica, sans-serif;
-            text-shadow: black 2px 2px 2px;
-        }
+    body {
+      background-color: #0e0f12;
+      font-family: Arial, Helvetica, sans-serif;
+      color: white;
+      overflow-x: hidden;
+      margin: 0;
+    }
 
-        #repo {
-            background-color: #00BFFF;
-            text-shadow: black 2px 2px 2px;
-            font-family: Arial, Helvetica, sans-serif;
-            color: white;
-            font-size: 16px;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-        }
+    h1, h2, h4 {
+      text-shadow: 2px 2px 2px black;
+    }
 
-                #repo-no {
-            background-color: #545f63;
-            cursor: not-allowed;
-            text-shadow: black 2px 2px 2px;
-            font-family: Arial, Helvetica, sans-serif;
-            color: white;
-            font-size: 16px;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-        }
-    </style>
-    <title>Projetos</title>
+    h1 {
+      margin-top: 40px;
+    }
+
+    button {
+      font-family: Arial, Helvetica, sans-serif;
+      color: white;
+      font-size: 16px;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+      cursor: pointer;
+      transition: transform 0.2s, opacity 0.2s;
+    }
+
+    #repo {
+      background-color: #00BFFF;
+      text-shadow: black 2px 2px 2px;
+    }
+
+    #repo-no {
+      background-color: #545f63;
+      text-shadow: black 2px 2px 2px;
+      cursor: not-allowed;
+    }
+
+    button:hover:not(#repo-no) {
+      transform: scale(1.05);
+      opacity: 0.9;
+    }
+
+    /* ====== Animação de entrada ====== */
+    .fade-in {
+      opacity: 0;
+      transform: translateY(40px);
+      transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+    }
+
+    .fade-in.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    img {
+      border-radius: 10px;
+    }
+
+    section {
+      margin: 80px 0;
+    }
+  </style>
 </head>
-<body style="background-color: #0e0f12;">
-    <h1>Projetos:</h1>
+<body>
+  <h1>Projetos:</h1>
+
+  <section class="fade-in">
     <img src="./img/neura.gif" height="240px">
     <h2>Nira</h2>
     <h4>Bot multiuso para o Discord</h4>
-    <button title="Em desenvolvimento" id="repo-no">Acessar repositório</button>&nbsp;&nbsp;<button title="Em desenvolvimento" id="repo-no">Acessar site</button>
-    <br><br><br><br> 
+    <button id="repo-no" title="Em desenvolvimento">Acessar repositório</button>&nbsp;&nbsp;
+    <button id="repo-no" title="Em desenvolvimento">Acessar site</button>
+  </section>
+
+  <section class="fade-in">
     <img src="./img/redetekiIcon.png" height="300px">
     <h2>Redeteki</h2>
     <h4>Chat de texto em tempo real</h4>
-    <a href="https://github.com/recaihd/Redeteki"><button id="repo">Acessar repositório</button></a>&nbsp;&nbsp;<a href="https://recaihd.github.io/tkFront/"><button id="repo">Acessar site</button></a>
-<br><br><br><br>
+    <a href="https://github.com/recaihd/Redeteki"><button id="repo">Acessar repositório</button></a>&nbsp;&nbsp;
+    <a href="https://recaihd.github.io/tkFront/"><button id="repo">Acessar site</button></a>
+  </section>
+
+  <section class="fade-in">
     <img src="./img/redefenix-icon.png" height="270px">
     <h2>Redefênix</h2>
     <h4>Site para um Servidor de Minecraft</h4>
-     <a href="https://github.com/recaihd/Capivara"><button id="repo">Acessar repositório</button></a>&nbsp;&nbsp;<a href="https://redefenix.shop/"><button id="repo">Acessar site</button></a>
+    <a href="https://github.com/recaihd/Capivara"><button id="repo">Acessar repositório</button></a>&nbsp;&nbsp;
+    <a href="https://redefenix.shop/"><button id="repo">Acessar site</button></a>
+  </section>
+
+  <script>
+    // Detecta quando um elemento entra na tela e adiciona a classe "visible"
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+  </script>
 </body>
 </html>
