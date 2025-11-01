@@ -81,7 +81,7 @@
   <h1>Projetos:</h1>
 
   <section class="fade-in">
-    <img src="./img/neura.gif" height="240px">
+    <img style="cursor: pointer;" src="./img/neura.gif" height="240px" onclick="play()">
     <h2>Nira</h2>
     <h4>Bot multiuso para o Discord</h4>
     <button id="repo-no" title="Em desenvolvimento">Acessar repositório</button>&nbsp;&nbsp;
@@ -105,6 +105,22 @@
   </section>
 
   <script>
+
+    let audio;
+      let isPlaying = true;
+
+      function play() {
+        audio = new Audio('https://files.catbox.moe/71sy8c.m4a');
+        audio.loop = false;
+        audio.volume = 0.5;
+        audio.play().catch(() => {
+          console.log('Autoplay bloqueado. Clique na página para iniciar.');
+        });
+        
+        document.addEventListener('click', () => {
+          audio.play();
+        }, { once: true });
+      }
     // Detecta quando um elemento entra na tela e adiciona a classe "visible"
     const observer = new IntersectionObserver(entries => {
       entries.forEach(entry => {
